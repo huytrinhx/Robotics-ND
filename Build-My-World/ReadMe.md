@@ -2,7 +2,7 @@
 Here are the files that is included in this project folder:
 
 - model folder:
-  * A two-wheeled robot and a caster wheel in front
+  * A 4-wheeled robot with cylynder body
   * A single floor structure designed in the Building Editor tool of Gazebo
 -world folder:
   * Gazebo world file that includes the models
