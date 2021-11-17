@@ -1,3 +1,0 @@
-/home/workspace/myrobot/build/CMakeFiles/edit_cache.dir
-/home/workspace/myrobot/build/CMakeFiles/rebuild_cache.dir
-/home/workspace/myrobot/build/CMakeFiles/welcome.dir
