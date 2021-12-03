@@ -168,14 +168,14 @@
 			</geometry>
 		</collision>
 		<visual name='lidar_visual'>
-			<origin xyz="0.20 0 0" rpy=" 0 0 0"/>
+			<origin xyz="0.0 0 0" rpy=" 0 0 0"/>
 			<geometry>
 				<mesh filename="package://my_robot/meshes/hokuyo.dae"/>
 			</geometry>
 		</visual>
 	</link>
 	<joint type="fixed" name="hokuyo_joint">
-		<origin xyz="0.15 0 0.1" rpy="0 0 0"/>
+		<origin xyz="0.15 0 0.05" rpy="0 0 0"/>
 		<child link="hokuyo"/>
 		<parent link="chassis"/>
 		<axis xyz="0 1 0" rpy="0 0 0"/>
