@@ -50,13 +50,15 @@ then run:
 
 - Finally, to simulate the whole home service task with communication between pick_objects and add_markers nodes, disable this line
 
+![TestLine](https://github.com/huytrinhx/Robotics-ND/blob/main/Home-Service-Robot/screenshots/DisableThis.JPG "Disable/Enable this testing line")
+
 then run:
 
 `./src/scripts/home_service.sh`
 
 # Challenges overcome
 
-Keep in mind there are more than one way to enable the communication between pick_objects and add_markers. In this project, I chose to implement a service request that the client in pick_objects to make a call to add_markers to signal the robot state (such as on the way to pickup zone, arrive pickup zone, heading to drop-off and done). But alternatively, we can have add_markers node subscribe to the robot's odometry to keep track of robot pose. 
+Keep in mind there are more than one way to enable the communication between **pick_objects** and **add_markers**. In this project, I chose to implement a service request that the client in pick_objects to make a call to add_markers to signal the robot state (such as on the way to pickup zone, arrive pickup zone, heading to drop-off and done). But alternatively, we can have add_markers node subscribe to the robot's odometry to keep track of robot pose. 
 
 In any case, there will be some discrepancies between the pose read by MoveBaseClient and the robot's own odometry. Therefore, I use tolerance number and set it to be 0.8 to account for the long distance robot had to travel. 
 
