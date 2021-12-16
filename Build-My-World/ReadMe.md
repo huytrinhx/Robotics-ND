@@ -1,16 +1,27 @@
 ![MyWorld](https://github.com/huytrinhx/Robotics-ND/blob/main/Build-My-World/screenshots/MyWorld%26MyRobot.JPG "My world and the 4-wheeled robot")
 
+## Overview
 
-Here are the files and folder structure for this project:
+In this project, I learned to work with Model Editor and Building Editor in Gazebo. In particular, I learned how to embed a mobile robot I designed into a world structure.
 
-- **model** folder:
-  * A 4-wheeled robot with cylinder body
-  * A single floor structure designed in the Building Editor tool of Gazebo
-- **world** folder:
-  * Gazebo world file that includes the models
-- **script** folder:
-  * Gazebo world plugin C++ script
-- CMakeLists.txt file to link the C++ code to libraries
+## Project Structure
+
+```
+    .Build-My-World                        # Build My World Project 
+    ├── model                          # Model files 
+    │   ├── my_world
+    │   │   ├── model.config
+    │   │   ├── model.sdf
+    │   ├── my_home_robot
+    │   │   ├── model.config
+    │   │   ├── model.sdf
+    ├── script                         # Gazebo World plugin C++ script      
+    │   ├── welcome_message.cpp
+    ├── world                          # Gazebo main World containing models 
+    │   ├── myworld
+    ├── CMakeLists.txt                 # Link libraries 
+    └──                              
+```
 
 ## Quickstart
 
