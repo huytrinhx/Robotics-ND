@@ -11,7 +11,7 @@ Then, I learn to create a ball_chaser package to hold the C++ nodes. In particul
 - The process_image will read the robot's camera image, analyze it to determine the presence and position of a white ball. If a white ball exists in the image, the node request a service via a client to drive the robot towards it
 
 # Project Structure
-
+```
    .Go-Chase-It                          # Go Chase It Project
     ├── my_robot                       # my_robot package                   
     │   ├── launch                     # launch folder for launch files   
@@ -37,7 +37,7 @@ Then, I learn to create a ball_chaser package to hold the C++ nodes. In particul
     │   ├── CMakeLists.txt             # compiler instructions
     │   ├── package.xml                # package info                  
     └──                              
-
+```
 # Quickstart
 
 - Copy the src folder into your catkin workspace and then run:
