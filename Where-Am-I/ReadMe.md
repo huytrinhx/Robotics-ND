@@ -1,4 +1,4 @@
-#Overview
+# Overview
 
 In this project, I learn to utilize ROS AMCL package to accurately localize a mobile robot inside a map in the Gazebo simulation environments.
 
@@ -28,7 +28,7 @@ You should see robot, the world and Rvix showing up
 
 In Rviz, you should see the robot, clouded by red particles in a map.
 
-![Rviz](https://github.com/huytrinhx/Robotics-ND/blob/main/Where-Am-I/screenshots/Localization_screenshot_2.PNG)
+![Rviz](https://github.com/huytrinhx/Robotics-ND/blob/main/Where-Am-I/screenshots/Localization_Screenshot_2.PNG)
 
 - To drive the bot around and see localization in action, run this command in a terminal:
 
@@ -49,5 +49,6 @@ Now, you will see changing shapes of the red particles cloud as it's filtering t
 
 # Challenges
 
-* A smaller update_min_* means more frequent update during moving
-* The biggest improvement I made to make localization work is to make my robot smaller. That means it has more space to manuveure.
+* A smaller update_min_* means more frequent update during moving.
+* Moving slowly may help localization since the localization takes time to run and update the Rviz
+* Making my robot smaller or environment bigger helps as that means the robot has more space to manuveure.
