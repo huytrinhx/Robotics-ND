@@ -1,8 +1,11 @@
+![Robot Starting Pose](/screenshots/RobotStartingPose.JPG)
+
 # Overview
 
 This is the final robotics project in Udacity Robotics Software Engineer Nanodegree. In this, I put everything together I've learned so far about robotics: Gazebo, ROS, localization, mapping and path planning. The task in this project is to simulate a full home service robot capable of navigating to pick up and deliver a virtual objects in the Gazebo world.
 
 In the world that I designed ( mimic the current house I live in :) ), the starting position of the robot has *[-4,0]* coordinates. 
+[Robot Starting Pose]
 The pickup zone is in my bedroom that has *[10,1]* coordinates. Initially, a green marker was displayed in this location. 
 Then the robot has to plan a path to this location. 
 Once arrived, the robot would sleep for a 5 seconds while the green marker disappeared to simulate picking up tasks. 
@@ -26,19 +29,19 @@ To test each function of the robot, we would need to launch several related node
 
 - To test the bot's ability to reach the pick up and drop off zone, run:
 
-`/src/scripts/pick_objects.sh`
+`./src/scripts/pick_objects.sh`
 
 - To test whether the markers displayed correctly, enable this line in the main method of add_markers.cpp
 
 then run:
 
-`/src/scripts/add_markers.sh`
+`./src/scripts/add_markers.sh`
 
 - Finally, to simulate the whole home service task with communication between pick_objects and add_markers nodes, disable this line
 
 then run:
 
-`/src/scripts/home_service.sh`
+`./src/scripts/home_service.sh`
 
 # Challenges overcome
 
@@ -46,7 +49,7 @@ Keep in mind there are more than one way to enable the communication between pic
 
 In any case, there will be some discrepancies between the pose read by MoveBaseClient and the robot's own odometry. Therefore, I use tolerance number and set it to be 0.8 to account for the long distance robot had to travel. 
 
-Also, by default, the slam_gmapping parameters are not great for the environment I designed, so I cloned two following repo to this project and edit these params from kinext_gmapping.launch.xml in the following directory
+Also, by default, the slam_gmapping parameters are not great for the environment I designed, so I cloned two following repo to this project and edit these params from kinect_gmapping.launch.xml in the following directory
 
 `\src\turtlebot_apps\turtlebot_navigation\launch\includes\gmapping`
 
