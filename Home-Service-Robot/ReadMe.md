@@ -1,4 +1,4 @@
-![Robot Starting Pose](/screenshots/RobotStartingPose.JPG)
+![Robot Starting Pose](https://github.com/huytrinhx/Robotics-ND/blob/main/Home-Service-Robot/screenshots/RobotStartingPose.JPG)
 
 # Overview
 
