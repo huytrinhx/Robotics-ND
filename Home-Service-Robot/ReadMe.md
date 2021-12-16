@@ -17,28 +17,28 @@ To test each function of the robot, we would need to launch several related node
 
 - To test slam function and create an original map, run these commands:
 
-'cd /home/workspace/catkin_ws
-./src/scripts/test_slam.sh'
+`cd /home/workspace/catkin_ws
+./src/scripts/test_slam.sh`
 
 - To test navigation and test the bot's ability to reach a goal (given through RViz) in the map constructed through slam_gmapping package, run:
 
-'./src/scripts/test_navigation.sh'
+`./src/scripts/test_navigation.sh`
 
 - To test the bot's ability to reach the pick up and drop off zone, run:
 
-'/src/scripts/pick_objects.sh'
+`/src/scripts/pick_objects.sh`
 
 - To test whether the markers displayed correctly, enable this line in the main method of add_markers.cpp
 
 then run:
 
-'/src/scripts/add_markers.sh'
+`/src/scripts/add_markers.sh`
 
 - Finally, to simulate the whole home service task with communication between pick_objects and add_markers nodes, disable this line
 
 then run:
 
-'/src/scripts/home_service.sh'
+`/src/scripts/home_service.sh`
 
 # Challenges overcome
 
@@ -48,7 +48,7 @@ In any case, there will be some discrepancies between the pose read by MoveBaseC
 
 Also, by default, the slam_gmapping parameters are not great for the environment I designed, so I cloned two following repo to this project and edit these params from kinext_gmapping.launch.xml in the following directory
 
-'\src\turtlebot_apps\turtlebot_navigation\launch\includes\gmapping'
+`\src\turtlebot_apps\turtlebot_navigation\launch\includes\gmapping`
 
 # Dependencies:
 - gmapping
