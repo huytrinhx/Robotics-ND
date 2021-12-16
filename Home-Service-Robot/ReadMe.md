@@ -62,14 +62,26 @@ Keep in mind there are more than one way to enable the communication between **p
 
 In any case, there will be some discrepancies between the pose read by MoveBaseClient and the robot's own odometry. Therefore, I use tolerance number and set it to be 0.8 to account for the long distance robot had to travel. 
 
-Also, by default, the slam_gmapping parameters are not great for the environment I designed, so I cloned two following repo to this project and edit these params from kinect_gmapping.launch.xml in the following directory
+Also, by default, the slam_gmapping parameters are not great for the environment I designed, so I cloned two following repo to this project
 
+- [turtlebot_apps](https://github.com/turtlebot/turtlebot_apps)
+- [turtlebot_msgs](https://github.com/turtlebot/turtlebot_msgs)
+
+and edit these params from **kinect_gmapping.launch.xml** in the following directory:
 `\src\turtlebot_apps\turtlebot_navigation\launch\includes\gmapping`
+
+- ~particles:120
+- ~minx:-100
+- ~miny:-100
+- ~maxUrange:15
+- ~maxRange:20
+- ~linearUpdate: 0.25
+- ~angularUpdate: 0.5
+
+
 
 # Dependencies:
 - [gmapping](http://wiki.ros.org/gmapping)
 - [turtlebot](http://wiki.ros.org/turtlebot_teleop)
 - [turtlebot_simulator](http://wiki.ros.org/turtlebot_rviz_launchers)
 - [turtlebot_interactions](http://wiki.ros.org/turtlebot_gazebo)
-- [turtlebot_apps](https://github.com/turtlebot/turtlebot_apps)
-- [turtlebot_msgs](https://github.com/turtlebot/turtlebot_msgs)
