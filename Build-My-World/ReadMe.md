@@ -1,4 +1,4 @@
-[MyWorld](https://github.com/huytrinhx/Robotics-ND/blob/main/Build-My-World/screenshots/MyWorld%26MyRobot.JPG "My world and the 4-wheeled robot")
+![MyWorld](https://github.com/huytrinhx/Robotics-ND/blob/main/Build-My-World/screenshots/MyWorld%26MyRobot.JPG "My world and the 4-wheeled robot")
 
 
 Here are the files and folder structure for this project:
