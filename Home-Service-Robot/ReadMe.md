@@ -1,18 +1,27 @@
-![Robot Starting Pose](https://github.com/huytrinhx/Robotics-ND/blob/main/Home-Service-Robot/screenshots/RobotStartingPose.JPG)
+![Robot Starting Pose](https://github.com/huytrinhx/Robotics-ND/blob/main/Home-Service-Robot/screenshots/RobotStartingPose.JPG "Robot Starting Pose")
 
 # Overview
 
 This is the final robotics project in Udacity Robotics Software Engineer Nanodegree. In this, I put everything together I've learned so far about robotics: Gazebo, ROS, localization, mapping and path planning. The task in this project is to simulate a full home service robot capable of navigating to pick up and deliver a virtual objects in the Gazebo world.
 
-In the world that I designed ( mimic the current house I live in :) ), the starting position of the robot has *[-4,0]* coordinates. 
-[Robot Starting Pose]
-The pickup zone is in my bedroom that has *[10,1]* coordinates. Initially, a green marker was displayed in this location. 
-Then the robot has to plan a path to this location. 
-Once arrived, the robot would sleep for a 5 seconds while the green marker disappeared to simulate picking up tasks. 
+In the world that I designed ( mimic the current house I live in :) ), the starting position of the robot has *[-4,0]* coordinates. The pickup zone is in my bedroom that has *[10,1]* coordinates. Initially, a green marker was displayed in this location.
+
+Then the robot has to plan a path to this location.
+
+![Navigating](https://github.com/huytrinhx/Robotics-ND/blob/main/Home-Service-Robot/screenshots/NavigatingToPickup.JPG "Robot is planning a path to pickup position")
+
+Once arrived, the robot would sleep for a 5 seconds while the green marker disappeared to simulate picking up tasks.
+
+![AtPickup](https://github.com/huytrinhx/Robotics-ND/blob/main/Home-Service-Robot/screenshots/AtPickup.JPG "Robot at pickup position")
+
 After that, the next green marker appeared at the drop-off zone, which has *[-11,-4]* coordinates. 
 Once reaching the drop-off, the green marker appeared back in the pickup zone.
 
+![AtDropoff](https://github.com/huytrinhx/Robotics-ND/blob/main/Home-Service-Robot/screenshots/AtDropoff.JPG "Robot at dropoff position")
+
 Overall where the robot started, picked up and dropped off were in 3 different room, which were connected with each other through a narrow common hallway. This is to demonstrate and test the system's ability to localize itself through a self-constructed map and constructing a path to the destination.
+
+![MyWorldMap](https://github.com/huytrinhx/Robotics-ND/blob/main/Home-Service-Robot/screenshots/MySLAMMap.JPG "The map of my world generated through SLAM")
 
 # Unit Testing
 
@@ -32,6 +41,8 @@ To test each function of the robot, we would need to launch several related node
 `./src/scripts/pick_objects.sh`
 
 - To test whether the markers displayed correctly, enable this line in the main method of add_markers.cpp
+
+![TestLine](https://github.com/huytrinhx/Robotics-ND/blob/main/Home-Service-Robot/screenshots/DisableThis.JPG "Disable/Enable this testing line")
 
 then run:
 
