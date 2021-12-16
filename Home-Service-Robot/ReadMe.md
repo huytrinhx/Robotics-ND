@@ -2,11 +2,11 @@
 
 This is the final robotics project in Udacity Robotics Software Engineer Nanodegree. In this, I put everything together I've learned so far about robotics: Gazebo, ROS, localization, mapping and path planning. The task in this project is to simulate a full home service robot capable of navigating to pick up and deliver a virtual objects in the Gazebo world.
 
-In the world that I designed ( mimic the current house I live in :) ), the starting position of the robot has [-4,0] coordinates. 
-The pickup zone is in my bedroom that has [10,1] coordinates. Initially, a green marker was displayed in this location. 
+In the world that I designed ( mimic the current house I live in :) ), the starting position of the robot has *[-4,0]* coordinates. 
+The pickup zone is in my bedroom that has *[10,1]* coordinates. Initially, a green marker was displayed in this location. 
 Then the robot has to plan a path to this location. 
 Once arrived, the robot would sleep for a 5 seconds while the green marker disappeared to simulate picking up tasks. 
-After that, the next green marker appeared at the drop-off zone, which has [-11,-4] coordinates. 
+After that, the next green marker appeared at the drop-off zone, which has *[-11,-4]* coordinates. 
 Once reaching the drop-off, the green marker appeared back in the pickup zone.
 
 Overall where the robot started, picked up and dropped off were in 3 different room, which were connected with each other through a narrow common hallway. This is to demonstrate and test the system's ability to localize itself through a self-constructed map and constructing a path to the destination.
@@ -17,8 +17,8 @@ To test each function of the robot, we would need to launch several related node
 
 - To test slam function and create an original map, run these commands:
 
-`cd /home/workspace/catkin_ws
-./src/scripts/test_slam.sh`
+`cd /home/workspace/catkin_ws`
+`./src/scripts/test_slam.sh`
 
 - To test navigation and test the bot's ability to reach a goal (given through RViz) in the map constructed through slam_gmapping package, run:
 
@@ -51,9 +51,9 @@ Also, by default, the slam_gmapping parameters are not great for the environment
 `\src\turtlebot_apps\turtlebot_navigation\launch\includes\gmapping`
 
 # Dependencies:
-- gmapping
-- turtlebot
-- turtlebot_simulator
-- turtlebot_interactions
-- turtlebot_apps
-- turtlebot_msgs
+- [gmapping](http://wiki.ros.org/gmapping)
+- [turtlebot](http://wiki.ros.org/turtlebot_teleop)
+- [turtlebot_simulator](http://wiki.ros.org/turtlebot_rviz_launchers)
+- [turtlebot_interactions](http://wiki.ros.org/turtlebot_gazebo)
+- [turtlebot_apps](https://github.com/turtlebot/turtlebot_apps)
+- [turtlebot_msgs](https://github.com/turtlebot/turtlebot_msgs)
