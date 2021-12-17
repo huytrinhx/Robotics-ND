@@ -12,7 +12,7 @@
 
 - Based on the previous project, I now equiped the bot with a lidar and a camera. Then I created a package that will drive the robot toward a white ball in the world.
 
-![Hitting the ball](https://udacity-reviews-uploads.s3.us-west-2.amazonaws.com/_attachments/345774/1637899565/Peek_2021-11-26_04-54.gif "Robot hits the ball")
+![Hitting](https://udacity-reviews-uploads.s3.us-west-2.amazonaws.com/_attachments/345774/1637899565/Peek_2021-11-26_04-54.gif)
 
 ## Where Am I
 
