@@ -12,7 +12,7 @@
 
 - Based on the previous project, I now equiped the bot with a lidar and a camera. Then I created a package that will drive the robot toward a white ball in the world.
 
-![Hitting](https://udacity-reviews-uploads.s3.us-west-2.amazonaws.com/_attachments/345774/1637899565/Peek_2021-11-26_04-54.gif)
+![Hitting](https://github.com/huytrinhx/Robotics-ND/blob/main/Go-Chase-It/screenshots/ChasingWhiteBall.JPG)
 
 ## Where Am I
 
@@ -49,6 +49,26 @@
 - [Top 5 Advanced Robotics Kit](https://linuxhint.com/top_5_advanced_robotics_kits/)
 - [Robotic Maintenance and ROS](https://core.ac.uk/download/pdf/154676353.pdf)
 - [ROS Tutorials](https://www.theconstructsim.com/ros-projects-exploring-ros-using-2-wheeled-robot-part-1/)
+- [ROS Launch](https://wiki.ros.org/roslaunch/XML)
+
+### Localization on Real Robot
+- https://cs.adelaide.edu.au/~carneiro/publications/Icpr10_v2_sub.pdf
+- https://spectrum.ieee.org/automaton/robotics/drones/mit-drone-avoids-obstacles
+- https://arxiv.org/pdf/1705.02550.pdf
+- https://www.youtube.com/watch?v=H7Ym3DMSGms
+
+### AMCL
+- [ROS Naviagtion tuning guide](http://kaiyuzheng.me/documents/navguide.pdf)
+- [Starting position of robot within amcl](https://www.youtube.com/watch?v=HmSdUagisAE)
+- [Tuning Parameters using graphical tool](https://www.youtube.com/watch?v=s0JA9jjZi44)
+- [Official AMCL doc](http://wiki.ros.org/amcl)
+- [How can I disperse amcl particles in specific area](https://answers.ros.org/question/230641/how-can-i-disperse-amcl-particles-in-specific-area/)
+
+### Dive Deeper
+- [ROS Robotics Project](https://www.packtpub.com/product/ros-robotics-projects/9781783554713)
+- [Modern Robotics: Mechanics, Planning and Control](http://hades.mech.northwestern.edu/index.php/Modern_Robotics)
+
+
 
 
 
