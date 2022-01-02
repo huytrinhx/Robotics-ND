@@ -23,6 +23,13 @@ Overall where the robot started, picked up and dropped off were in 3 different r
 
 ![MyWorldMap](https://github.com/huytrinhx/Robotics-ND/blob/main/Home-Service-Robot/screenshots/MySLAMMap.JPG "The map of my world generated through SLAM")
 
+# Key Components and How It Works
+
+- **slam-gmapping**: SLAM stands for simultaneous localization and mapping. This packages allow the bot to use particle filtering based on sensor data (laser and pose data) to localize itself while constructing a 2-D ocupancy grid map.
+- **ROS navigation stack**: this navigation stack is included in standard ROS distribution. It's a 2D navigation stack that takes in information from odometry, sensor streams and a goal pose and output safe velocity commands that are sent to a mobile base. In particular, ROS navigation stack creates path for the mobile based on Dijkstra's algorithm, a variant of the uniform cost search algorithm, while avoiding obstacles on its path.
+- **add_markers**: this package exposed a service for pick_objects client to call. Also, it interacts with rviz by adding/changing/deleting virtual objects (markers).
+- **pick_objects**: this package interacts with navigation stack so that the mobile base can move towards the published goal pose. Also, it makes requests to add_markers service based on the phase of the tasks so that the markers can be displayed at the designated locations.
+
 # Unit Testing
 
 To test each function of the robot, we would need to launch several related nodes at the same time. To automate this mundane tasks, I've grouped the command in separate shell scripts (locate in /src/scripts folder).
@@ -30,6 +37,7 @@ To test each function of the robot, we would need to launch several related node
 - To test slam function and create an original map, run these commands:
 
 `cd /home/workspace/catkin_ws`
+
 `./src/scripts/test_slam.sh`
 
 - To test navigation and test the bot's ability to reach a goal (given through RViz) in the map constructed through slam_gmapping package, run:
