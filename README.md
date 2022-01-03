@@ -50,6 +50,7 @@
 - [Robotic Maintenance and ROS](https://core.ac.uk/download/pdf/154676353.pdf)
 - [ROS Tutorials](https://www.theconstructsim.com/ros-projects-exploring-ros-using-2-wheeled-robot-part-1/)
 - [ROS Launch](https://wiki.ros.org/roslaunch/XML)
+- [Using rosparam to load the parameter to ROS Master](https://roboticsbackend.com/ros-param-yaml-format/)
 
 ### Localization on Real Robot
 - https://cs.adelaide.edu.au/~carneiro/publications/Icpr10_v2_sub.pdf
@@ -67,6 +68,8 @@
 ### Dive Deeper
 - [ROS Robotics Project](https://www.packtpub.com/product/ros-robotics-projects/9781783554713)
 - [Modern Robotics: Mechanics, Planning and Control](http://hades.mech.northwestern.edu/index.php/Modern_Robotics)
+- [Build a real robot system](https://www.semanticscholar.org/paper/Design-of-an-autonomous-mobile-robot-based-on-ROS-K%C3%B6seo%C4%9Flu-%C3%87elik/9dd90f7b746657fe077f8cf1ea56f6a8d65ce21c#extracted)
+- 
 
 
 
